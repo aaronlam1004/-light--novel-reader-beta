@@ -1,0 +1,111 @@
+/* home sidebar (on left) */
+#sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+/* context menu */
+#menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+}
+
+#menu > li {
+    background: #FFFFFF;
+}
+
+#menu > li:hover {
+    cursor: pointer;
+    background-color: #AAAAAA;
+}
+
+/**/
+#prompt {
+    display: none;
+    z-index: 1;
+    background-color: #777777;
+    padding: 10px;
+}
+
+#prompt > p {
+    color: #FFFFFF;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* the main area (PDF viewer, profile picture, highlight options form) */
+#pdf-viewer {
+    margin-left: 15%;
+}
+
+#pdf-render {
+    position: relative;
+    border: 1px solid black;
+}
+
+#profile {
+    display: inline-block;
+    position: fixed;
+    top: 30px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#highlight-form {
+    visibility: hidden;
+    display: inline-block;
+    position: fixed;
+    top: 250px;
+    margin-left: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/* sidebar for the highlights (on right) */
+#highlight-sidebar {
+    position: fixed;
+    top: 0px;
+    right: 25px;
+    height: 100%;
+    white-space: nowrap;
+}
+
+#highlight-sidebar > button {
+    float: right;
+}
+
+#highlight-list {
+    list-style: none;
+}
+
+.highlight-choice:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* the navigation buttons (next page, prev page, page number) */
+#navigation {
+    margin-left: 15%;
+}
+
+/* zoom features (zoom in, zoom out) */
+#zoom {
+    margin-left: 15%;
+}

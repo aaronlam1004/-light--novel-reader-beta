@@ -1,0 +1,5 @@
+python-socketio
+eventlet
+aiohttp
+PyMuPDF
+requests
